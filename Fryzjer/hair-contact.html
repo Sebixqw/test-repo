@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hair-contact.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="nav">
+    <a href="hair.html">Strona główna</a>
+    <a href="hair-orders.html">Rezerwacja</a>
+  </div>
+
+
+
+
+    <div class="contact">
+      <p> <h2>Kontakt z nami </h2> </p>
+      <div class="form">
+
+        <form action="procesuj_formularz.php" method="POST">
+          <label for="imie">Imię:</label><br>
+          <input type="text" id="imie" name="imie" required><br><br>
+      
+          <label for="tresc">Treść wiadomości:</label><br>
+          <textarea id="tresc" name="tresc" rows="4" cols="50" required ></textarea><br><br>
+      
+          <input type="submit" value="Wyślij">
+
+      </div>
+
+    </div>  
+
+    <div class="footer">Copyright</div>
+
+  </body>
+  </html>

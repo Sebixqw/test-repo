@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hair-orders.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="hair.html">Strona główna</a>
+        <a href="hair-contact.html">Kontakt</a>
+      </div>
+
+    <div class="content">
+
+        <p>Co strzyżemy ?</p>
+
+        <div class="choice">
+
+            <label>
+                <input type="checkbox" onchange="toggleCheckbox(this)">
+                <span class="checkbox"></span> Broda
+            </label>
+            <label>
+                <input type="checkbox" onchange="toggleCheckbox(this)">
+                <span class="checkbox"></span> Włosy
+            </label>
+            <label>
+                <input type="checkbox" onchange="toggleCheckbox(this)">
+                <span class="checkbox"></span> Broda i włosy
+            </label>
+
+        </div>
+
+        <p>Kiedy Pani/Panu pasuje ?</p>
+
+        <div class="callendar">
+
+            Dzień:
+            <select name="day"></select>
+            
+            Godzina:
+            <select name="hour"></select>
+            
+            Miesiąc:
+            <select name="month">
+                <option value="1">Styczeń</option>
+                <option value="2">Luty</option>
+                <option value="3">Marzec</option>
+                <option value="4">Kwiecień</option>
+                <option value="5">Maj</option>
+                <option value="6">Czerwiec</option>
+                <option value="7">Lipiec</option>
+                <option value="8">Sierpień</option>
+                <option value="9">Wrzesień</option>
+                <option value="10">Październik</option>
+                <option value="11">Listopad</option>
+                <option value="12">Grudzień</option>
+            </select>
+            
+
+            
+        </div>
+
+        <p>Imię i nazwisko</p>
+
+        <div class="name-surname">
+
+            <label for="name"></label>
+            <input type="text" id="name" name="name" value="Imię" onfocus="clearValue(this)" onblur="restoreValue(this)">
+            
+            <label for="surname"></label>
+            <input type="text" id="sname" name="sname" value="Nazwisko" onfocus="clearValue(this)" onblur="restoreValue(this)">
+
+        </div>
+
+        <script>
+            function clearValue(element) {
+        if (element.value === element.defaultValue) {
+            element.value = '';
+        }
+    }
+
+    function restoreValue(element) {
+        if (element.value === '') {
+            element.value = element.defaultValue;
+        }
+    }
+        </script>
+
+        <p>Płatność</p>
+
+        <div class="cash-choice">
+
+            <label>
+                <input type="checkbox" onchange="toggleCheckbox(this)">
+                <span class="checkbox"></span> Karta
+            </label>
+            <label>
+                <input type="checkbox" onchange="toggleCheckbox(this)">
+                <span class="checkbox"></span> Gotówka
+            </label>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="footer">Copyright</div>
+
+    <script src="hair-orders.js"></script>
+</body>
+</html>

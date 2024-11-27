@@ -1,0 +1,17 @@
+.workmates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    
+}
+
+.mate{
+    height: 400px;
+    width: 320px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

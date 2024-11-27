@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="hair.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="nav">
+      <a href="hair-orders.html">Rezerwacja</a>
+      <a href="hair-contact.html">Kontakt</a>
+    </div>
+
+    <div class="message" style="text-align: center; font-family: 'Times New Roman', Times, serif;"><p> <h2>Wstęp</h2> </p></div>
+
+    <div class="content">
+
+        <div class="intro"> <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, natus tenetur praesentium suscipit velit non perferendis optio maiores fugiat quis ipsa consequuntur a blanditiis, 
+        iure, voluptates voluptate odit corrupti iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem accusantium aperiam maxime. Sequi, fugit repellat nemo maiores, dolor autem doloremque reiciendis nostrum labore 
+        veritatis ipsum reprehenderit excepturi eveniet fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum expedita earum ullam fugit autem sequi nemo rem vero exercitationem possimus maiores dignissimos 
+        nisi voluptates commodi dolore eum, adipisci itaque. Distinctio. </p></div>
+        <div class="slide-show">
+            <img class="slide" src="slides/hair-1.jpg" alt="photo 1">
+            <img class="slide" src="slides/hair-3.jpg" alt="photo 2">
+            <img class="slide" src="slides/hair-4.jpg" alt="photo 3">
+            <img class="slide" src="slides/hair-2.jpg" alt="photo 4">
+        </div>
+
+        <div class="message" style="text-align: center; font-family: 'Times New Roman', Times, serif;"><p> <h2>Co oferujemy ?</h2> </p></div>
+
+        <div class="offers">
+            <div class="offer-1"> <img src="flat-icons/head.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi explicabo, voluptate mollitia necessitatibus consequatur dolore quas ipsa error et ut molestias voluptas dignissimos neque nihil natus hic. Perferendis, ex. </div>
+            <div class="offer-2"> <img src="flat-icons/beard.png"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut delectus culpa rerum officiis. Doloremque, ut libero dolorum fugiat aut delectus recusandae totam? Nihil natus harum consectetur vel facere eaque?</div>
+            <div class="offer-3"> <img src="flat-icons/cosmetics..png"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nisi eveniet vel aliquid libero excepturi cum fuga perspiciatis, quasi incidunt maiores iure laboriosam doloremque explicabo ea impedit labore nam iste?</div>
+        </div>
+        
+        <div class="message" style="text-align: center; font-family: 'Times New Roman', Times, serif;"><p> <h2>Certyfikaty i nagrody naszych pracowników:</h2> </p></div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="slides/certicate.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+    
+
+    <div class="footer">Copyright</div>
+    <script src="hair.js"></script>
+    
+</html>
